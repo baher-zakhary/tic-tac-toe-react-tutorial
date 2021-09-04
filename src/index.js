@@ -17,21 +17,26 @@ import './index.css';
 //     }
 // }
 
-class Square extends React.Component {
+// class Square extends React.Component {
 
-    render() {
-        return (
-            <button
-                className="square"
-                onClick={() => this.props.onClick()}>
-                {this.props.value}
-            </button>
-        );
-    }
+//     render() {
+//         return (
+//             <button
+//                 className="square"
+//                 onClick={() => this.props.onClick()}>
+//                 {this.props.value}
+//             </button>
+//         );
+//     }
+// }
 
-    onClickSquare() {
-
-    }
+function Square(props) {
+    return (
+        <button className="square"
+            onClick={props.onClick}>
+            {props.value}
+        </button>
+    );
 }
 
 class Board extends React.Component {
